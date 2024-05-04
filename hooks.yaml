@@ -5,6 +5,7 @@
     language: rust
     files: \.rs$
     args: []
+    additional_dependencies: ['cli:cargo']
 -   id: cargo-check
     name: cargo check
     description: Check the package for errors.
@@ -12,6 +13,7 @@
     language: rust
     files: \.rs$
     pass_filenames: false
+    additional_dependencies: ['cli:cargo']
 -   id: cargo-clippy
     name: cargo clippy
     description: Run the Clippy linter on the package.
@@ -19,3 +21,4 @@
     language: rust
     files: \.rs$
     pass_filenames: false
+    additional_dependencies: ['cli:cargo']
